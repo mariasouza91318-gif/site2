@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Vagas — Oportunidades para o seu futuro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- HEADER E MENU -->
+  <header class="topo" id="inicio">
+    <div class="container header-conteudo">
+      <a href="#inicio" class="logo">
+        <i class="fa-solid fa-briefcase logo-icone"></i>
+        <div class="logo-texto">
+          <h1>Conecta Vagas</h1>
+          <span>Oportunidades para o seu futuro</span>
+        </div>
+      </a>
+
+      <nav class="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio" class="ativo">Início</a></li>
+          <li><a href="#vagas">Vagas</a></li>
+          <li><a href="#dicas">Dicas</a></li>
+          <li><a href="#video">Vídeo</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CARROSSEL E BANNERS -->
+  <section class="carrossel-container" aria-label="Banners em destaque">
+    <div class="carrossel-slides" id="carrosselSlides">
+      
+      <!-- Banner 1 -->
+      <div class="slide ativo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiAfMglE4NI6eETwK378hJGyfF9LJ2Dg6wNETJ00bzkw&s=10" alt="Profissionais reunidos em escritório moderno">
+        <div class="slide-overlay">
+          <div class="container slide-texto">
+            <h2>Conectando<br><span>Talentos e Empresas</span></h2>
+            <p>Encontre oportunidades de trabalho e dê o próximo passo na sua carreira.</p>
+            <a href="#vagas" class="btn-destaque">Buscar Vagas <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner 2 -->
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1400&q=80" alt="Profissional sorrindo em ambiente corporativo">
+        <div class="slide-overlay">
+          <div class="container slide-texto">
+            <h2>Prepare-se para<br><span>Conquistar sua Vaga</span></h2>
+            <p>Confira dicas práticas de currículo, entrevistas e atualização profissional.</p>
+            <a href="#dicas" class="btn-destaque">Ver Dicas <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner 3 -->
+      <div class="slide">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80" alt="Equipe trabalhando com tecnologia">
+        <div class="slide-overlay">
+          <div class="container slide-texto">
+            <h2>Diversas Áreas<br><span>Em Toda a Região</span></h2>
+            <p>Oportunidades ilustrativas em Tecnologia, Administração, Indústria e Comércio.</p>
+            <a href="#video" class="btn-destaque">Assistir Guia <i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button type="button" class="carrossel-btn prev" id="btnPrev" aria-label="Slide anterior">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button type="button" class="carrossel-btn next" id="btnNext" aria-label="Próximo slide">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <div class="carrossel-indicadores" id="carrosselIndicadores">
+      <button type="button" class="indicador ativo" data-index="0" aria-label="Slide 1"></button>
+      <button type="button" class="indicador" data-index="1" aria-label="Slide 2"></button>
+      <button type="button" class="indicador" data-index="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- FAIXA DE RECURSOS -->
+  <section class="faixa-recursos">
+    <div class="container recursos-grid">
+      <div class="recurso-item">
+        <i class="fa-regular fa-user"></i>
+        <div>
+          <strong>Vagas Atualizadas</strong>
+          <span>Novas oportunidades todos os dias</span>
+        </div>
+      </div>
+      <div class="recurso-item">
+        <i class="fa-regular fa-building"></i>
+        <div>
+          <strong>Diversas Áreas</strong>
+          <span>Administrativa, Tecnologia, Indústria e mais</span>
+        </div>
+      </div>
+      <div class="recurso-item">
+        <i class="fa-regular fa-file-lines"></i>
+        <div>
+          <strong>Cadastro de Currículo</strong>
+          <span>Se candidate com facilidade</span>
+        </div>
+      </div>
+      <div class="recurso-item">
+        <i class="fa-regular fa-bell"></i>
+        <div>
+          <strong>Alertas de Vagas</strong>
+          <span>Receba novidades no seu e-mail</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container conteudo-principal">
+
+    <!-- SEÇÃO DE VAGAS (4 CARDS DEMONSTRATIVOS) -->
+    <section class="secao-vagas" id="vagas">
+      <div class="titulo-secao">
+        <h2>Vagas em Destaque</h2>
+        <p>Oportunidades demonstrativas disponíveis para consulta</p>
+      </div>
+
+      <div class="vagas-grid">
+        
+        <!-- Card 1 -->
+        <article class="card-vaga">
+          <div class="card-vaga-topo">
+            <div class="vaga-icone"><i class="fa-solid fa-laptop-code"></i></div>
+            <div>
+              <h3>Desenvolvedor Web</h3>
+              <span class="vaga-area">Tecnologia</span>
+            </div>
+          </div>
+          <ul class="vaga-info">
+            <li><i class="fa-solid fa-location-dot"></i> Vale do Sol / MG</li>
+            <li><i class="fa-solid fa-briefcase"></i> CLT</li>
+          </ul>
+          <div class="vaga-detalhes" hidden>
+            <p><strong>Descrição:</strong> Criação e manutenção de sites responsivos com HTML5, CSS3 e JavaScript. Desejável noção de lógica de programação.</p>
+            <p><strong>Horário:</strong> Segunda a sexta, das 08h às 17h.</p>
+          </div>
+          <button type="button" class="btn-detalhes">Ver detalhes</button>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card-vaga">
+          <div class="card-vaga-topo">
+            <div class="vaga-icone"><i class="fa-solid fa-file-invoice"></i></div>
+            <div>
+              <h3>Assistente Administrativo</h3>
+              <span class="vaga-area">Administrativa</span>
+            </div>
+          </div>
+          <ul class="vaga-info">
+            <li><i class="fa-solid fa-location-dot"></i> Serra Azul / MG</li>
+            <li><i class="fa-solid fa-briefcase"></i> CLT</li>
+          </ul>
+          <div class="vaga-detalhes" hidden>
+            <p><strong>Descrição:</strong> Apoio nas rotinas de escritório, organização de documentos, atendimento ao público e controle de planilhas.</p>
+            <p><strong>Horário:</strong> Segunda a sexta, das 08h30 às 17h30.</p>
+          </div>
+          <button type="button" class="btn-detalhes">Ver detalhes</button>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card-vaga">
+          <div class="card-vaga-topo">
+            <div class="vaga-icone"><i class="fa-solid fa-industry"></i></div>
+            <div>
+              <h3>Auxiliar de Produção</h3>
+              <span class="vaga-area">Indústria</span>
+            </div>
+          </div>
+          <ul class="vaga-info">
+            <li><i class="fa-solid fa-location-dot"></i> Nova Esperança / MG</li>
+            <li><i class="fa-solid fa-briefcase"></i> Efetivo</li>
+          </ul>
+          <div class="vaga-detalhes" hidden>
+            <p><strong>Descrição:</strong> Conferência de materiais na linha de montagem, embalagem de produtos e organização do setor fabril.</p>
+            <p><strong>Horário:</strong> Turno comercial (07h às 16h48).</p>
+          </div>
+          <button type="button" class="btn-detalhes">Ver detalhes</button>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card-vaga">
+          <div class="card-vaga-topo">
+            <div class="vaga-icone"><i class="fa-solid fa-headset"></i></div>
+            <div>
+              <h3>Atendente Comercial</h3>
+              <span class="vaga-area">Comércio e Vendas</span>
+            </div>
+          </div>
+          <ul class="vaga-info">
+            <li><i class="fa-solid fa-location-dot"></i> Monte Verde / MG</li>
+            <li><i class="fa-solid fa-briefcase"></i> Estágio</li>
+          </ul>
+          <div class="vaga-detalhes" hidden>
+            <p><strong>Descrição:</strong> Atendimento presencial e online aos clientes, apresentação de produtos e apoio no registro de pedidos.</p>
+            <p><strong>Horário:</strong> 6 horas diárias, de segunda a sexta.</p>
+          </div>
+          <button type="button" class="btn-detalhes">Ver detalhes</button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE DICAS DE CARREIRA (3 CARDS INFORMATIVOS) -->
+    <section class="secao-dicas" id="dicas">
+      <div class="titulo-secao">
+        <h2>Dicas de Carreira</h2>
+        <p>Orientações essenciais para destacar seu perfil profissional</p>
+      </div>
+
+      <div class="dicas-grid">
+        
+        <!-- Dica 1: Currículo -->
+        <article class="card-dica">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdj77Zkkz8cp3VaPNG49fxmd_AIdkki46tRLV-gBE6Zw&s=10" alt="Pessoa organizando currículo">
+          <div class="card-dica-conteudo">
+            <span class="tag-dica">Currículo</span>
+            <h3>Como montar um currículo objetivo</h3>
+            <p>Mantenha seus dados de contato atualizados, destaque suas habilidades principais e organize suas experiências de forma clara.</p>
+          </div>
+        </article>
+
+        <!-- Dica 2: Entrevistas -->
+        <article class="card-dica">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBctjK6ZsAsja4vwo8HsRTAQ7TELsIS9YfX9cevkSJHg&s=10" alt="Candidato em entrevista de emprego">
+          <div class="card-dica-conteudo">
+            <span class="tag-dica">Entrevistas</span>
+            <h3>Preparação para entrevistas</h3>
+            <p>Pesquise sobre a empresa antes da conversa, chegue no horário combinado e fale com segurança sobre seus objetivos.</p>
+          </div>
+        </article>
+
+        <!-- Dica 3: Atualização Profissional -->
+        <article class="card-dica">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhuzvIKoAtkIywOe0HwQn7az0Eeuj0Wbbk1tPwV1VDQw&s=10" alt="Estudante fazendo curso no notebook">
+          <div class="card-dica-conteudo">
+            <span class="tag-dica">Qualificação</span>
+            <h3>Atualização profissional contínua</h3>
+            <p>Invista em cursos livres, pratique ferramentas digitais e acompanhe as novidades da sua área para se destacar.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE VÍDEO -->
+    <section class="secao-video" id="video">
+      <div class="video-layout">
+        <div class="video-texto">
+          <span class="tag-dica">Dicas de Carreira</span>
+          <h2>Como se preparar para o mercado de trabalho</h2>
+          <p>Assista ao vídeo com orientações práticas sobre postura profissional, preparação para entrevistas e planejamento de carreira.</p>
+          <ul class="lista-video">
+            <li><i class="fa-solid fa-check"></i> Postura e comunicação clara na entrevista</li>
+            <li><i class="fa-solid fa-check"></i> Organização de metas profissionais</li>
+            <li><i class="fa-solid fa-check"></i> Como demonstrar interesse e proatividade</li>
+          </ul>
+        </div>
+
+        <div class="video-box">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HKAjyQU3dRY?si=exX1Gnbfumq-DIxU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="rodape" id="contato">
+    <div class="container rodape-conteudo">
+      <div class="rodape-marca">
+        <div class="logo">
+          <i class="fa-solid fa-briefcase logo-icone"></i>
+          <div class="logo-texto">
+            <h2>Conecta Vagas</h2>
+            <span>Oportunidades para o seu futuro</span>
+          </div>
+        </div>
+        <p class="rodape-aviso">Portal demonstrativo com vagas ilustrativas e orientações para candidatos.</p>
+      </div>
+
+      <div class="rodape-centro">
+        <nav class="rodape-links" aria-label="Links do rodapé">
+          <a href="#inicio">Início</a>
+          <a href="#vagas">Vagas</a>
+          <a href="#dicas">Dicas</a>
+          <a href="#video">Vídeo</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <p class="rodape-contato-info">
+          <i class="fa-regular fa-envelope"></i> contato@conectavagas.com.br &nbsp;|&nbsp;
+          <i class="fa-solid fa-phone"></i> (32) 3000-0000
+        </p>
+        <p class="copyright">&copy; 2026 Conecta Vagas. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="rodape-social">
+        <a href="#contato" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#video" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#contato" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
